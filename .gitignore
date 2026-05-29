@@ -1,3 +1,29 @@
+# Compiled output
+dist
+build
+*.js.map
+
+# Dependencies
+node_modules
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Tests
+coverage
+test-results
+
+# Tooling
+.eslintcache
+*.tsbuildinfo
+
+# OS
+.DS_Store
 node_modules
 dist
 .env

@@ -1,0 +1,11 @@
+# pnpm-workspace.yaml - project-level pnpm 11 settings.
+# Auth/registry settings belong in .npmrc; all other settings belong here.
+
+blockExoticSubdeps: true
+
+# allowBuilds:
+#   argon2: true
+allowBuilds:
+  '@nestjs/core': set this to true or false
+  '@scarf/scarf': set this to true or false
+  esbuild: set this to true or false

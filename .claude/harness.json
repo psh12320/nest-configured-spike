@@ -1,0 +1,11 @@
+{
+  "templatecentral_version": "4.0.0",
+  "stack": "nestjs",
+  "seeded_at": "2026-05-29",
+  "seeded_files": {
+    "AGENTS.md": { "origin_hash": "placeholder", "path": "AGENTS.md" },
+    "CLAUDE.md": { "origin_hash": "placeholder", "path": "CLAUDE.md" },
+    ".claude/settings.json": { "origin_hash": "placeholder", "path": ".claude/settings.json" },
+    ".claude/skills/nest-verify.md": { "origin_hash": "placeholder", "path": ".claude/skills/nest-verify.md" }
+  }
+}
