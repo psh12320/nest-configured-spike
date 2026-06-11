@@ -10,7 +10,7 @@
     "check": "pnpm exec prettier --check . && pnpm exec eslint . && pnpm exec tsc --noEmit",
     "test": "pnpm exec vitest",
     "test:e2e": "pnpm exec vitest --config vitest.config.e2e.ts --run",
-    "prepare": "husky"
+    "prepare": "husky || true"
   },
   "dependencies": {
     "@fastify/cors": "^10.1.0",
