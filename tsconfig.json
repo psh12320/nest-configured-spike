@@ -12,7 +12,7 @@
     "allowSyntheticDefaultImports": true,
     "target": "ES2023",
     "sourceMap": true,
-    "rootDir": "./",
+    "rootDir": "./app",
     "outDir": "./dist",
     "baseUrl": "./",
     "ignoreDeprecations": "5.0",
@@ -20,8 +20,8 @@
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "typeRoots": ["./node_modules/@types", "./src/common/types"],
+    "typeRoots": ["./node_modules/@types", "./app/common/types"],
     "types": ["node"]
   },
-  "include": ["src/**/*", "src/common/types/**/*.d.ts"]
+  "include": ["app/**/*", "app/common/types/**/*.d.ts"]
 }

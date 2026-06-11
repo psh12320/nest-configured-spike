@@ -9,9 +9,9 @@ build/
 coverage/
 test/
 test-results/
-**/*.spec.ts
-**/*.test.ts
-**/*.e2e-spec.ts
+*.spec.ts
+*.test.ts
+*.e2e-spec.ts
 *.tsbuildinfo
 !pnpm-lock.yaml
 !pnpm-workspace.yaml
@@ -19,8 +19,3 @@ test-results/
 !tsconfig.json
 !tsconfig.build.json
 !.npmrc
-
-# Explicitly force-include source so no upstream .dockerignore rule can
-# exclude it.
-!src/
-!src/**

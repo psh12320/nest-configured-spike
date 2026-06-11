@@ -1,8 +1,8 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import { Test, type TestingModule } from '@nestjs/testing';
 
-import { BaseController } from '../../src/modules/base/base.controller';
-import { BaseService } from '../../src/modules/base/base.service';
+import { BaseController } from '../../app/modules/base/base.controller';
+import { BaseService } from '../../app/modules/base/base.service';
 
 describe('BaseController', () => {
   let controller: BaseController;

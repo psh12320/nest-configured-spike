@@ -6,12 +6,12 @@ export default defineConfig({
     environment: 'node',
     passWithNoTests: true,
     setupFiles: ['test/setup.ts'],
-    include: ['test/**/*.{spec,test}.ts', 'src/**/*.spec.ts'],
+    include: ['test/**/*.{spec,test}.ts', 'app/**/*.spec.ts'],
     coverage: {
       provider: 'v8',
       reporter: ['text', 'lcov'],
-      include: ['src/**/*.ts'],
-      exclude: ['**/*.spec.ts', '**/*.d.ts', 'src/main.ts'],
+      include: ['app/**/*.ts'],
+      exclude: ['**/*.spec.ts', '**/*.d.ts', 'app/main.ts'],
     },
   },
 });

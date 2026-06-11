@@ -1,9 +1,9 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import { Test, type TestingModule } from '@nestjs/testing';
 
-import { ExampleController } from '../../src/modules/example/example.controller';
-import { ExampleRepository } from '../../src/modules/example/example.repository';
-import { ExampleService } from '../../src/modules/example/example.service';
+import { ExampleController } from '../../app/modules/example/example.controller';
+import { ExampleRepository } from '../../app/modules/example/example.repository';
+import { ExampleService } from '../../app/modules/example/example.service';
 
 describe('ExampleController', () => {
   let controller: ExampleController;
