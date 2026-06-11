@@ -4,7 +4,10 @@ import { config } from 'dotenv';
 config();
 
 import { NestFactory } from '@nestjs/core';
-import { FastifyAdapter, type NestFastifyApplication } from '@nestjs/platform-fastify';
+import {
+  FastifyAdapter,
+  type NestFastifyApplication,
+} from '@nestjs/platform-fastify';
 import { Logger } from 'nestjs-pino';
 
 import { AppModule } from './app.module';
@@ -13,7 +16,11 @@ import { appConfig, setupCors, setupSecurity, setupSwagger } from './config';
 async function bootstrap(): Promise<void> {
   const trustProxyEnv = process.env.TRUST_PROXY;
   const trustProxy: boolean | number | string | undefined =
-    trustProxyEnv === '*' ? true : trustProxyEnv && /^\d+$/.test(trustProxyEnv) ? parseInt(trustProxyEnv, 10) : trustProxyEnv;
+    trustProxyEnv === '*'
+      ? true
+      : trustProxyEnv && /^\d+$/.test(trustProxyEnv)
+        ? parseInt(trustProxyEnv, 10)
+        : trustProxyEnv;
 
   const app = await NestFactory.create<NestFastifyApplication>(
     AppModule,

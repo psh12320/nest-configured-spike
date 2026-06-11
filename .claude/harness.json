@@ -5,7 +5,13 @@
   "seeded_files": {
     "AGENTS.md": { "origin_hash": "placeholder", "path": "AGENTS.md" },
     "CLAUDE.md": { "origin_hash": "placeholder", "path": "CLAUDE.md" },
-    ".claude/settings.json": { "origin_hash": "placeholder", "path": ".claude/settings.json" },
-    ".claude/skills/nest-verify.md": { "origin_hash": "placeholder", "path": ".claude/skills/nest-verify.md" }
+    ".claude/settings.json": {
+      "origin_hash": "placeholder",
+      "path": ".claude/settings.json"
+    },
+    ".claude/skills/nest-verify.md": {
+      "origin_hash": "placeholder",
+      "path": ".claude/skills/nest-verify.md"
+    }
   }
 }

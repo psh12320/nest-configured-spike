@@ -23,7 +23,11 @@ export class ExampleRepository {
 
   update(id: string, data: Partial<ExampleItem>): ExampleItem {
     const existing = this.findById(id);
-    const updated = { ...existing, ...data, updatedAt: new Date().toISOString() };
+    const updated = {
+      ...existing,
+      ...data,
+      updatedAt: new Date().toISOString(),
+    };
     this.items.set(id, updated);
     return updated;
   }

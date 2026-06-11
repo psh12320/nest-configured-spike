@@ -18,9 +18,8 @@
     "ignoreDeprecations": "5.0",
     "incremental": true,
     "skipLibCheck": true,
-    "strictNullChecks": true,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noImplicitAny": false,
     "typeRoots": ["./node_modules/@types", "./src/common/types"],
     "types": ["node"]
   },

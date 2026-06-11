@@ -1,4 +1,15 @@
-import { Body, Controller, Delete, Get, HttpCode, HttpStatus, Inject, Param, Post, Put } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  HttpCode,
+  HttpStatus,
+  Inject,
+  Param,
+  Post,
+  Put,
+} from '@nestjs/common';
 import { ApiBody, ApiOperation, ApiParam, ApiTags } from '@nestjs/swagger';
 
 import { CreateExampleDto, UpdateExampleDto } from './example.dto';
@@ -8,7 +19,9 @@ import type { ExampleItem } from './example.types';
 @ApiTags('Example')
 @Controller('examples')
 export class ExampleController {
-  constructor(@Inject(ExampleService) private readonly exampleService: ExampleService) {}
+  constructor(
+    @Inject(ExampleService) private readonly exampleService: ExampleService,
+  ) {}
 
   @Get()
   @ApiOperation({ summary: 'List all examples' })

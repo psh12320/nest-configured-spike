@@ -1,4 +1,7 @@
-export function convertStrToList(value: string | undefined, delimiter: string): string[] | undefined {
+export function convertStrToList(
+  value: string | undefined,
+  delimiter: string,
+): string[] | undefined {
   if (!value) return undefined;
   return value
     .split(delimiter)

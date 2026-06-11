@@ -26,8 +26,14 @@ export async function setupSecurity(app: INestApplication): Promise<void> {
   });
 
   fastify.addHook('onSend', async (_request, reply, payload) => {
-    void reply.header('Cache-Control', 'no-cache, no-store, must-revalidate, private');
-    void reply.header('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
+    void reply.header(
+      'Cache-Control',
+      'no-cache, no-store, must-revalidate, private',
+    );
+    void reply.header(
+      'Permissions-Policy',
+      'camera=(), microphone=(), geolocation=()',
+    );
     return payload;
   });
 }

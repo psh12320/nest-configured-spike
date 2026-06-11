@@ -6,7 +6,9 @@ import type { ExampleItem } from './example.types';
 
 @Injectable()
 export class ExampleService {
-  constructor(@Inject(ExampleRepository) private readonly repository: ExampleRepository) {}
+  constructor(
+    @Inject(ExampleRepository) private readonly repository: ExampleRepository,
+  ) {}
 
   findAll(): ExampleItem[] {
     return this.repository.findAll();

@@ -17,7 +17,8 @@ import { appConfig } from './config';
         transport:
           process.env.NODE_ENV === 'test'
             ? undefined
-            : appConfig.ENVIRONMENT !== 'prod' && appConfig.ENVIRONMENT !== 'uat'
+            : appConfig.ENVIRONMENT !== 'prod' &&
+                appConfig.ENVIRONMENT !== 'uat'
               ? { target: 'pino-pretty', options: { singleLine: true } }
               : undefined,
       },
