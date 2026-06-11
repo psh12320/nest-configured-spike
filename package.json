@@ -4,7 +4,7 @@
   "private": true,
   "packageManager": "pnpm@10.15.1",
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "ls -la && echo '--- src:' && (ls -la src/ || echo 'src/ MISSING') && tsc -p tsconfig.build.json",
     "start:dev": "pnpm exec nest start --watch",
     "start": "node dist/main.js",
     "check": "pnpm exec prettier --check . && pnpm exec eslint . && pnpm exec tsc --noEmit",
